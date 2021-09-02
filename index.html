@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Load TensorFlow.js. This is required to use MobileNet. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.1"></script>
+    <!-- Load the MobileNet model. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"></script>
+    <title>Image Recognition using TensorFlow.js</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container" id="imageHolder">
+      <p style="font-size: 1.5rem;">Upload image here...</p>
+    </div>
+
+    <div class="container">
+      <form id="form">
+        <input type="file" id="file" />
+        <input type="submit" />
+      </form>
+    </div>
+
+    <div class="container">
+      <table id="predictionTable" style="display: none;"></table>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
